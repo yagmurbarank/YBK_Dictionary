@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqsozluk">
+  <DataContextMoniker Name="/linqsozlukDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fee7a809-3e8f-4af1-aa06-1e7050fcd75a" absoluteBounds="3.5, 1.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/linqsozlukDataContext/kelime_anlam_matriksi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acd66946-cd97-42c0-acf0-f0f1f73be42e" absoluteBounds="3.515, 1.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2f01510-b6f0-46cf-9a39-e8834a3e160f" absoluteBounds="3.75, 3.75, 2, 2.347801106770834">
+      <DataClassMoniker Name="/linqsozlukDataContext/Kullanicilar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80456105-dc54-42dd-8198-8550bd7954fb" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a305ad3-6b9e-43d3-bd28-3179d1367398" absoluteBounds="0.75, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/linqsozlukDataContext/KelimeAnlami" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8c05454-b98f-4ee1-9a4e-ad1083a81217" absoluteBounds="0.765, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26b9f85f-22f5-4dbd-89fe-7502586085b3" absoluteBounds="0.75, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/linqsozlukDataContext/Kelimeler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2deb1ee-abca-4924-a472-4b2b274a3898" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.94314697265625); (3.5 : 1.94314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqsozlukDataContext/KelimeAnlami/KelimeAnlami_kelime_anlam_matriksi" />
+      <nodes>
+        <classShapeMoniker Id="8a305ad3-6b9e-43d3-bd28-3179d1367398" />
+        <classShapeMoniker Id="fee7a809-3e8f-4af1-aa06-1e7050fcd75a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.875); (3.125 : 3.5); (3.125 : 2.32097245898438); (3.5 : 2.32097245898438)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqsozlukDataContext/Kelimeler/Kelimeler_kelime_anlam_matriksi" />
+      <nodes>
+        <classShapeMoniker Id="26b9f85f-22f5-4dbd-89fe-7502586085b3" />
+        <classShapeMoniker Id="fee7a809-3e8f-4af1-aa06-1e7050fcd75a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
